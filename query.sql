@@ -18,3 +18,21 @@
 -- Sakārtot pokemonus pēc augstāka HP (ORDER BY)
 
 -- Izdzēst tos, kam attack mazāks par 50 (DELETE, WHERE)
+create table pokemon_DB (
+    pokemon_id int,
+    pokemon_name varchar(20),
+    pokemon_type1 varchar(20),
+    pokemon_type2 varchar(20),
+    pokemon_total int,
+    pokemon_hp int,
+    pokemon_attack int,
+    pokemnon_defense int
+);
+INSERT INTO pokemon_DB(pokemon_id, pokemon_name, pokemon_type1, pokemon_type2, pokemon_total, pokemon_hp, pokemon_attack, pokemnon_defense)
+VALUES
+(1,'Bulbasaur','Grass','Poison',318,45,49,49),
+(2,'Ivysaur','Grass','Poison',405,65,62,63),
+(3,'Venusaur','Grass','Poison',525,80,82,83),
+(4,'Charmander','Fire','None',309,39,52,43);
+
+SELECT * FROM pokemon_DB;
